@@ -1,1 +1,1 @@
-![](/acting-indian.png)
+![](/acting-indian.jpeg)
