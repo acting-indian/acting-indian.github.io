@@ -52,6 +52,7 @@ a:hover {
 img.research-photo {
     cursor: pointer;
     max-height: 50vh;
+    min-height: 30vh;
     max-width: 75vw;
     border-radius: 1rem;
 }
