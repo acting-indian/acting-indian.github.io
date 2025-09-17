@@ -105,6 +105,10 @@
 
     </div>
 
+    <script>
+        const total_images = 13;
+    </script>
+
     <div class="grid-overlay"></div>
 
     <style>
@@ -161,14 +165,14 @@
 
         .masonry {
             column-count: 3;
-            column-gap: 0.5rem;
-            max-width: 1200px;
+            column-gap: 0.3rem;
+            max-width: 900px;
             margin: auto;
         }
 
         .masonry-item {
             break-inside: avoid;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.3rem;
             background: #fff;
             border-radius: 8px;
             overflow: hidden;
@@ -251,7 +255,7 @@
         });
 
         // Preload images
-        for (let i = 1; i <= 13; i++) {
+        for (let i = 1; i <= total_images; i++) {
             const img = new Image();
             img.src = `acting-indian-${i}.jpg`;
         }
