@@ -184,6 +184,13 @@
             display: block;
             height: auto;
         }
+
+        /* Force 3 columns on all screen sizes */
+        @media screen and (max-width: 767px) {
+            .masonry {
+                column-count: 3 !important;
+            }
+        }
     </style>
 
     <script>

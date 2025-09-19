@@ -85,6 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const p = document.createElement('p');
             p.textContent = text;
             p.className = 'research-photo-caption';
+            p.style.cursor = 'default';
             p.style.fontSize = '1.4rem';
             p.style.lineHeight = '2.2rem';
             if (window.innerWidth < 768) {
@@ -126,3 +127,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+setTimeout(function () {
+    const caption = document.querySelector('p.research-photo-caption');
+    if (caption) {
+        caption.click();
+    }
+}, 2000);
