@@ -249,6 +249,7 @@
                     closeBtn.style.boxShadow = '0 2px 12px rgba(0,0,0,0.2)';
 
                     closeBtn.onclick = function () {
+                        document.getElementById('masonry').classList.add('masonry');
                         document.body.removeChild(overlay);
                     };
 
@@ -263,6 +264,7 @@
 
                     setTimeout(function () {
                         overlay.style.opacity = '1';
+                        document.getElementById('masonry').classList.remove('masonry');
                     }, 200);
 
                 });
