@@ -256,9 +256,9 @@
                     closeBtn.style.boxShadow = '0 2px 12px rgba(0,0,0,0.2)';
 
                     closeBtn.onclick = function () {
+                        document.body.removeChild(overlay);
                         document.getElementById('masonry').style.visibility = 'visible';
                         document.getElementById('masonry').classList.add('masonry');
-                        document.body.removeChild(overlay);
                     };
 
                     overlay.onclick = function (e) {
@@ -271,9 +271,9 @@
                     document.body.appendChild(overlay);
 
                     setTimeout(function () {
-                        overlay.style.opacity = '1';
                         document.getElementById('masonry').style.visibility = 'hidden';
                         document.getElementById('masonry').classList.remove('masonry');
+                        overlay.style.opacity = '1';
                     }, 200);
 
                 });
