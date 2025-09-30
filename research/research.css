@@ -62,15 +62,14 @@ p.research-photo-caption {
     font-size: 1.1rem;
     padding: 1rem 1.5rem;
     margin-top: 1rem;
-    color: #e0e0e0;
-    background: rgba(30, 30, 30, 0.55);
-    border-left: 4px solid #ffe599;
+    color: #111;
+    background: linear-gradient(45deg, #FF671F, #eee, #eee, #eee, #046A38);
+    border-left: 4px solid #ff0000;
     border-radius: 0 1rem 1rem 0;
     box-shadow: 0 2px 18px rgba(0,0,0,0.18);
     font-style: italic;
-    text-align: justify;
     margin-bottom: 2rem;
     letter-spacing: 0.01em;
-    line-height: 1.6rem;
+    line-height: 1.5rem;
     cursor: pointer;
 }

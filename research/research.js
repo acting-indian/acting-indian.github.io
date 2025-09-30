@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
             p.className = 'research-photo-caption';
             p.style.cursor = 'default';
             p.style.fontSize = '1.4rem';
-            p.style.lineHeight = '2.2rem';
+            p.style.lineHeight = '2.1rem';
             if (window.innerWidth < 768) {
                 p.style.marginBottom = '7rem';
             }
