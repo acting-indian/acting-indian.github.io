@@ -29,6 +29,13 @@
         <a href="2.html" class="research-link">COLLABORATION</a>
     </div>
 
+    <div class="footer">
+        © <span id="current-year"></span> ACTING INDIAN .com
+    </div>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
     <div class="grid-overlay"></div>
 
     <style>
@@ -83,41 +90,51 @@
             text-decoration: none;
         }
 
-                .research-links {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    counter-reset: linknum;
-                }
+        .research-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            counter-reset: linknum;
+            margin-bottom: 3.5rem;
+        }
+
         a.research-link {
-                    display: block;
-                    font-size: 0.9rem;
-                    padding: .65rem 1.8rem;
-                    color: #333;
-                    text-decoration: none;
-                    border-radius: 5px;
-                    text-align: center;
-                    margin-bottom: 1.1rem;
-                    background: linear-gradient(45deg, #FF671F, #eee, #eee, #eee, #046A38);
-                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-                    font-weight: bold;
-                    line-height: 1.3rem;
-                    box-sizing: border-box;
-                    width: 100%;
-                    max-width: none;
-                    position: relative;
-                }
-                a.research-link::before {
-                    counter-increment: linknum;
-                    content: counter(linknum) ". ";
-                    position: absolute;
-                    left: 1rem;
-                    color: #333;
-                    font-weight: bold;
-                }
-                a.research-link {
-                    padding-left: 2.8rem;
-                }
+            display: block;
+            font-size: 0.9rem;
+            padding: .65rem 1.8rem;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+            margin-bottom: 1.1rem;
+            background: linear-gradient(45deg, #FF671F, #eee, #eee, #eee, #046A38);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            line-height: 1.3rem;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: none;
+            position: relative;
+        }
+
+        a.research-link::before {
+            counter-increment: linknum;
+            content: counter(linknum) ". ";
+            position: absolute;
+            left: 1rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        a.research-link {
+            padding-left: 2.8rem;
+        }
+
+        .footer {
+            margin-top: auto;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #666;
         }
     </style>
 

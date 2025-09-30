@@ -122,6 +122,13 @@
         const total_images = 15;
     </script>
 
+    <div class="footer">
+        © <span id="current-year"></span> ACTING INDIAN .com
+    </div>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
     <div class="grid-overlay"></div>
 
     <style>
@@ -204,6 +211,13 @@
             .masonry {
                 column-count: 3 !important;
             }
+        }
+
+        .footer {
+            margin-top: auto;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #666;
         }
     </style>
 
