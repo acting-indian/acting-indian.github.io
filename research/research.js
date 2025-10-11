@@ -22,7 +22,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             const img = document.createElement('img');
             img.src = src;
-            img.style.maxHeight = '95vh';
+            img.style.maxHeight = '80vh';
+            img.style.marginBottom = '5vh';
             img.style.maxWidth = '95vw';
             img.style.boxShadow = '0 0 10px #000';
             img.style.borderRadius = '8px';
@@ -33,13 +34,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const closeBtn = document.createElement('span');
             closeBtn.textContent = '✕';
             closeBtn.style.position = 'fixed';
-            closeBtn.style.top = '2rem';
-            closeBtn.style.right = '2rem';
+            closeBtn.style.bottom = '4vh';
+            closeBtn.style.right = 'auto';
+            closeBtn.style.left = 'auto';
             closeBtn.style.fontSize = '2rem';
             closeBtn.style.color = '#fff';
             closeBtn.style.cursor = 'pointer';
             closeBtn.style.fontWeight = 'bold';
-            closeBtn.style.background = 'rgba(0,0,0,0.3)';
+            closeBtn.style.background = 'rgba(255, 0, 0, 0.8)';
             closeBtn.style.borderRadius = '50%';
             closeBtn.style.padding = '0.5rem 1rem';
             closeBtn.style.boxShadow = '0 2px 12px rgba(0,0,0,0.2)';
@@ -95,13 +97,14 @@ document.addEventListener('DOMContentLoaded', function () {
             const closeBtn = document.createElement('span');
             closeBtn.textContent = '✕';
             closeBtn.style.position = 'fixed';
-            closeBtn.style.top = '2rem';
-            closeBtn.style.right = '2rem';
+            closeBtn.style.bottom = '4vh';
+            closeBtn.style.right = 'auto';
+            closeBtn.style.left = 'auto';
             closeBtn.style.fontSize = '2rem';
             closeBtn.style.color = '#fff';
             closeBtn.style.cursor = 'pointer';
             closeBtn.style.fontWeight = 'bold';
-            closeBtn.style.background = 'rgba(0,0,0,0.3)';
+            closeBtn.style.background = 'rgba(255, 0, 0, 0.8)';
             closeBtn.style.borderRadius = '50%';
             closeBtn.style.padding = '0.5rem 1rem';
             closeBtn.style.boxShadow = '0 2px 12px rgba(0,0,0,0.2)';
