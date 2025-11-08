@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050505">
+    <meta content="dark light" name="color-scheme">
+    <meta name="description" content="⭐️ ACTOR & FILMMAKER">
+    <link rel="icon" type="image/x-icon" href="https://actingindian.com/favicon.ico">
+    <link rel="apple-touch-icon" href="https://actingindian.com/acting-indian.png">
+    <meta property="og:image" content="https://actingindian.com/acting-indian.png">
+    <meta name="twitter:image" content="https://actingindian.com/acting-indian.png">
+    <title>ACTING INDIAN RESEARCH</title>
+</head>
+
+<body>
+
+    <a href="/">
+        <h1>ACTING INDIAN</h1>
+    </a>
+    <a href="/">
+        <h2>⭐️ R E S E A R C H</h2>
+    </a>
+    <br />
+
+    <div class="research-links">
+        <a href="1.html" class="research-link">ACTING KEY CONCEPT</a>
+        <a href="2.html" class="research-link">COLLABORATION</a>
+    </div>
+
+    <div class="footer">
+        © <span id="current-year"></span> ACTING INDIAN .com
+    </div>
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+
+    <div class="grid-overlay"></div>
+
+    <style>
+        body {
+            min-height: 100vh;
+            background-color: black;
+            background: radial-gradient(circle at center, #444, black) fixed;
+            color: #fff;
+            font-family: Arial;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .grid-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: 40px 40px;
+            background-image:
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+            z-index: -10;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 1.5rem 0 0 0;
+            text-shadow: 1px 1px 3rem rgba(255, 254, 0, 0.58);
+        }
+
+        @media screen and (min-width: 768px) {
+            h1 {
+                margin: 3rem 0 0 0;
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #ffe599;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        a,
+        a:visited,
+        a:active,
+        a:hover {
+            color: white;
+            text-decoration: none;
+        }
+
+        .research-links {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            counter-reset: linknum;
+            margin-bottom: 3.5rem;
+        }
+
+        a.research-link {
+            display: block;
+            font-size: 0.9rem;
+            padding: .65rem 1.8rem;
+            color: #333;
+            text-decoration: none;
+            border-radius: 2px;
+            text-align: center;
+            margin-bottom: 1.1rem;
+            background: linear-gradient(45deg, #FF671F, #eee, #eee, #eee, #eee, #046A38);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-weight: bold;
+            line-height: 1.3rem;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: none;
+            position: relative;
+            letter-spacing: 1px;
+        }
+
+        a.research-link::before {
+            counter-increment: linknum;
+            content: counter(linknum) ". ";
+            position: absolute;
+            left: 1rem;
+            color: #333;
+            font-weight: bold;
+        }
+
+        a.research-link {
+            padding-left: 2.8rem;
+        }
+
+        .footer {
+            margin-top: auto;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-THVCPC5CSW"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-THVCPC5CSW');
+    </script>
+
+</body>
+
+</html>

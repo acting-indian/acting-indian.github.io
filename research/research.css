@@ -1,0 +1,92 @@
+body {
+    min-height: 100vh;
+    background-color: black;
+    background: radial-gradient(circle at center, #444, black) fixed;
+    color: #fff;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 40px 40px;
+    background-image:
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    z-index: -10;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1.5rem 0 0 0;
+    text-shadow: 1px 1px 3rem rgba(255, 254, 0, 0.58);
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        margin: 3rem 0 0 0;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #ffe599;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+a,
+a:visited,
+a:active,
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+img.research-photo {
+    max-height: 50vh;
+    min-height: 30vh;
+    max-width: 75vw;
+    border-radius: 0.25rem;
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        #fff 3%,
+        #fff 97%,
+        transparent 100%
+    );
+}
+
+p.research-photo-caption {
+    max-width: 600px;
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    color: #222;
+    background: linear-gradient(45deg, #FF671F, #cecece, #cecece, #cecece, #cecece, #cecece, #cecece,#cecece, #cecece, #cecece, #046A38);
+    border-left: 4px solid #ff0000;
+    border-radius: 0 0.25rem 0.25rem 0;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.18);
+    margin-bottom: 2rem;
+    letter-spacing: 0.01em;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+    p.research-photo-caption {
+        color: #000;
+    }
+}
+
+.footer {
+    margin-top: auto;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: #666;
+}
